@@ -74,6 +74,12 @@ console.log(me)
     Write a function called "dice"; it should randomize an integer number between 1 and 6.
 */
 
+function dice(){
+  let randomNumber = Math.random() * 6
+  let totalNumber = Math.floor(randomNumber)
+  return totalNumber
+}
+console.log(dice())
 
 /* Ex.2 
     Write a function called "whoIsBigger" which receives 2 numbers as parameters and returns the biggest one.
