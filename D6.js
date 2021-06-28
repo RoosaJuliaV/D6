@@ -209,12 +209,9 @@ console.log(isTodayMyBirthday(28, 6))
    Write a function called "deleteProp" which receives an object and a string as parameters, and returns the given object after deleting its property named as the given string.
 */
 
-/* function deleteProp(object, string) {
-let object = myNewestObject
-let string = "Julia"
-return 
+let person = {
+
 }
-console.log(deleteProp(object.pop())
 
 // JS Arrays // Objs
 // NOTE: movies array is defined at the end of this file!
@@ -372,6 +369,15 @@ console.log(onlyTheTitles())
 /* Ex.16 
     Write a function called "getMovieById" which receives an id as a parameter and returns the movie with the given id.
 */
+
+function getMovieById(id) {
+  for (let i = 0; i < movies.length; i++) {
+    if (id === movies[i].imdbID) {
+    return movies[i]
+  }
+}
+}
+console.log(getMovieById("tt0167261"))
 
 /* Ex.17
     Write a function called "sumAllTheYears" which returns the sum of all the years in which the movies provided have been produced.
