@@ -209,14 +209,12 @@ console.log(isTodayMyBirthday(28, 6))
    Write a function called "deleteProp" which receives an object and a string as parameters, and returns the given object after deleting its property named as the given string.
 */
 
-let person = {
 
-}
 
 // JS Arrays // Objs
-// NOTE: movies array is defined at the end of this file!
+// NOTE: movies array is defined at the end of this file! */
 
-/* const movies = [
+const movies = [
   {
     Title: "The Lord of the Rings: The Fellowship of the Ring",
     Year: "2001",
