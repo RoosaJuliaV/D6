@@ -139,9 +139,21 @@ console.log(isThisAnEmail("roosavuotso@hotmail.com"))
    Write a function called "whatDayIsIt" that should return the current day of the week.
 */
 
-/* function whatDayIsIt() {
-  getDay
+function whatDayIsIt() {
+  let d = new Date()
+  weekday = new Array(7)
+  weekday[0] = "Sunday",
+  weekday[1] = "Monday",
+  weekday[2] = "Tuesday",
+  weekday[3] = "Wednesday",
+  weekday[4] = "Thursday",
+  weekday[5] = "Friday",
+  weekday[6] = "Saturday"
+
+  let n = weekday[d.getDay()]
+  return n
 }
+console.log(whatDayIsIt())
 
 /* Ex.8
     Write a function called "rollTheDices" which receives a number as a parameter.
@@ -161,6 +173,10 @@ console.log(isThisAnEmail("roosavuotso@hotmail.com"))
 /* Ex.10
    Write a function called "isTodayMyBirthday" which should return true if today's your birthday, false otherwise.
 */
+
+/* function isTodayMyBirthday(myDay, myMonth) {
+  var myMonth
+}
 
 // JS Arrays // Objs
 // NOTE: movies array is defined at the end of this file!
