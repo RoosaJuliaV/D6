@@ -95,23 +95,53 @@ console.log(whoIsBigger())
     Ex. splitMe("I love coding") => returns ["I", "Love", "Coding"]
 */
 
+function splitMe(myNewString) {
+return myNewString.split(" ")
+}
+console.log(splitMe("I love coding"))
 
 /* Ex.4
     Write a function called "deleteOne" which receives a string and a boolean as parameters. If the boolean value is true it should return the string without the first letter, otherwise it should remove the last one from it.
 */
+
+function deleteOne(string, boolean) {
+  let myArray = string.split("")
+  if (boolean === true) {
+    myArray.shift()
+  } else {
+    myArray.pop()
+  }
+  return myArray.join("")
+}
+console.log(deleteOne("Strive", true))
 
 /* Ex.5
    Write a function called "onlyLetters" which receives a string as a parameter and returns it removing all the digits.
    Ex.: onlyLetters("I have 4 dogs")  => returns "I have  dogs"
 */
 
+function onlyLetters(myNewestString) {
+  return myNewestString.replace(/[0-9]/g, " ")
+}
+console.log(onlyLetters("I have 4 dogs"))
+
 /* Ex.6 
    Write a function called "isThisAnEmail" which receives a string as a parameter and returns true if the string is a valid email address.
 */
 
+function isThisAnEmail(myEmail) {
+   var re = /\S+@\S+\.\S+/
+        return re.test(myEmail)
+}
+console.log(isThisAnEmail("roosavuotso@hotmail.com"))
+
 /* Ex.7
    Write a function called "whatDayIsIt" that should return the current day of the week.
 */
+
+/* function whatDayIsIt() {
+  getDay
+}
 
 /* Ex.8
     Write a function called "rollTheDices" which receives a number as a parameter.
