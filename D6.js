@@ -209,7 +209,12 @@ console.log(isTodayMyBirthday(28, 6))
    Write a function called "deleteProp" which receives an object and a string as parameters, and returns the given object after deleting its property named as the given string.
 */
 
-/* function deleteProp
+/* function deleteProp(object, string) {
+let object = myNewestObject
+let string = "Julia"
+return 
+}
+console.log(deleteProp(object.pop())
 
 // JS Arrays // Objs
 // NOTE: movies array is defined at the end of this file!
@@ -349,9 +354,20 @@ console.log(countMovies())
     Write a function called "onlyTheTitles" which creates an array with just the titles of the movies provided in the array at the end of the file.
 */
 
+function onlyTheTitles() {
+  let arrayOfTitles = []
+  for (let i = 0; i < movies.length; i++) {
+    arrayOfTitles.push(movies[i].Title)
+  }
+  return arrayOfTitles
+}
+console.log(onlyTheTitles())
+
 /* Ex.15
    Write a function called "onlyInThisMillennium" which returns only the movies produced in this millennium.
 */
+
+/* function onlyInThisMillennium()
 
 /* Ex.16 
     Write a function called "getMovieById" which receives an id as a parameter and returns the movie with the given id.
@@ -360,6 +376,13 @@ console.log(countMovies())
 /* Ex.17
     Write a function called "sumAllTheYears" which returns the sum of all the years in which the movies provided have been produced.
 */
+
+const myNewArray = [1963, 2019, 2015, 2018, 2012, 1984, 2012, 1978, 1990, 2005, 2005, 2002, 2003, 2001]
+let sumAllTheYears = 0
+for (let i = 0; i < myNewArray.length; i++) {
+sumAllTheYears += myNewArray[i]
+}
+console.log(sumAllTheYears)
 
 /* Ex.18
     Write a function called "searchByTitle" which receives a string as a parameter and returns all the movies which contain that string in the title.
