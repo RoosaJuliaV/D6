@@ -340,7 +340,7 @@ console.log(Math.min(1963, 2019, 2015, 2018, 2012, 1984, 2012, 1978, 1990, 2005,
     Write a function called "countMovies" which returns the number of movies contained in the array provided at the end of this file.
 */
 
-/* function countMovies() {
+function countMovies() {
   return movies.length
 }
 console.log(countMovies())
