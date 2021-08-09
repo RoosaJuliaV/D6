@@ -392,6 +392,17 @@ console.log(sumAllTheYears)
     Write a function called "searchByTitle" which receives a string as a parameter and returns all the movies which contain that string in the title.
 */
 
+const searchByTitle = function (string) {
+  let searchArray = []
+  for (let i = 0; i < movies.length; i++) {
+    if (movies[i]["Title"].includes(string)) {
+      searchArray.push(movies[i])
+    }
+  }
+  return searchArray
+}
+console.log(searchByTitle("Avengers"))
+
 /* Ex.19
     Write a function called "searchAndDivide" which receives a string as a parameter and returns an object;
     this object should contain an array called "match", made by all the movies which contain the given string in the title,
@@ -401,6 +412,13 @@ console.log(sumAllTheYears)
 /* Ex.20
    Write a function called "removeIndex" which receives a number as a parameter and returns the movies array without the element in the given position.
 */
+
+const removeIndex = function (n) {
+  movies.splice(n, 1)
+  return movies
+}
+
+console.log(removeIndex(0))
 
 // [EXTRAS] JS Advanced
 
